@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'AttenRoundNew';
+  src: url('/fonts/AttenRoundNew-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AttenRoundNew';
+  src: url('/fonts/AttenRoundNew-RegularItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'AttenRoundNew';
+  src: url('/fonts/AttenRoundNew-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AttenRoundNew';
+  src: url('/fonts/AttenRoundNew-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+  font-family: 'AttenRoundNew', sans-serif;
+  font-feature-settings: 'kern';
+}
