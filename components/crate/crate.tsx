@@ -41,7 +41,7 @@ export function Crate() {
         <Slider
           defaultValue={[floor, ceiling]}
           label="BPM"
-          maxValue={150}
+          maxValue={160}
           minValue={90}
           onChange={(v: [number, number]) => setRange(v)}
           step={5}
