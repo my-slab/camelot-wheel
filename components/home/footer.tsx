@@ -5,7 +5,7 @@ export function Footer(props) {
     <footer className="flex items-center justify-center w-full h-24 border-t-4 border-purple-600">
       <a
         className="flex items-center justify-center"
-        href="https://github.com/my-slab/camelot-wheel-fuser"
+        href="https://github.com/my-slab/camelot-wheel"
         target="_blank"
         rel="noopener noreferrer"
       >
