@@ -1,3 +1,4 @@
+// @ts-nocheck
 import clsx from 'clsx'
 import { mergeProps } from '@react-aria/utils'
 import { useFocusEffect, useRovingTabIndex } from 'react-roving-tabindex'
@@ -46,7 +47,6 @@ export function Slice(props: SliceProps) {
 
   return (
     <g>
-      // @ts-ignore
       <path
         d={d}
         {...mergeProps(hoverProps, pressProps)}
