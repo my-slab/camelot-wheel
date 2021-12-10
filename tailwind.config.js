@@ -1,12 +1,86 @@
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media',
   theme: {
     extend: {},
+    fill: (theme) => ({
+      'blue-100': theme('colors.blue.100'),
+      'blue-200': theme('colors.blue.200'),
+      'blue-300': theme('colors.blue.300'),
+      'blue-400': theme('colors.blue.400'),
+      'blue-500': theme('colors.blue.500'),
+      'blue-600': theme('colors.blue.600'),
+      'blue-700': theme('colors.blue.700'),
+      'blue-800': theme('colors.blue.800'),
+      'blue-900': theme('colors.blue.900'),
+
+      'green-100': theme('colors.green.100'),
+      'green-200': theme('colors.green.200'),
+      'green-300': theme('colors.green.300'),
+      'green-400': theme('colors.green.400'),
+      'green-500': theme('colors.green.500'),
+      'green-600': theme('colors.green.600'),
+      'green-700': theme('colors.green.700'),
+      'green-800': theme('colors.green.800'),
+      'green-900': theme('colors.green.900'),
+
+      'red-100': theme('colors.red.100'),
+      'red-200': theme('colors.red.200'),
+      'red-300': theme('colors.red.300'),
+      'red-400': theme('colors.red.400'),
+      'red-500': theme('colors.red.500'),
+      'red-600': theme('colors.red.600'),
+      'red-700': theme('colors.red.700'),
+      'red-800': theme('colors.red.800'),
+      'red-900': theme('colors.red.900'),
+
+      'yellow-100': theme('colors.yellow.100'),
+      'yellow-200': theme('colors.yellow.200'),
+      'yellow-300': theme('colors.yellow.300'),
+      'yellow-400': theme('colors.yellow.400'),
+      'yellow-500': theme('colors.yellow.500'),
+      'yellow-600': theme('colors.yellow.600'),
+      'yellow-700': theme('colors.yellow.700'),
+      'yellow-800': theme('colors.yellow.800'),
+      'yellow-900': theme('colors.yellow.900'),
+
+      'gray-100': theme('colors.gray.100'),
+      'gray-200': theme('colors.gray.200'),
+      'gray-600': theme('colors.gray.600'),
+      'gray-700': theme('colors.gray.700'),
+      'gray-800': theme('colors.gray.800'),
+
+      'purple-500': theme('colors.purple.500'),
+      'purple-600': theme('colors.purple.600'),
+      'purple-700': theme('colors.purple.700'),
+      'purple-800': theme('colors.purple.800'),
+      'purple-900': theme('colors.purple.900'),
+
+      'pink-500': theme('colors.pink.500'),
+      'pink-600': theme('colors.pink.600'),
+      'pink-700': theme('colors.pink.700'),
+      'pink-800': theme('colors.pink.800'),
+      'pink-900': theme('colors.pink.900'),
+    }),
+
+    stroke: (theme) => ({
+      'purple-400': theme('colors.purple.400'),
+      'purple-500': theme('colors.purple.500'),
+      'purple-600': theme('colors.purple.600'),
+      'purple-700': theme('colors.purple.700'),
+      'purple-800': theme('colors.purple.800'),
+    }),
+
+    transitionProperty: {
+      fill: 'fill',
+      strokeWidth: 'stroke-width',
+    },
   },
   variants: {
-    extend: {},
+    extend: {
+      fill: ['dark'],
+    },
   },
   plugins: [],
 }
